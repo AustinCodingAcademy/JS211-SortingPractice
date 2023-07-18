@@ -1024,17 +1024,20 @@ console.log(sumEvens(strNums));
 // get nums array
 // for loop find first place where index + value === 512
 // break so only first iteration can occur
+
+// findIndex method works for this.
 const atxIdx = (arr) => {
   const nums = stringsToNumbs(arr);
-  for (let i = 0; i < arr.length; i++) {
-    if (i + nums[i] === 512) {
-      console.log(`index: ${i}, value: ${nums[i]}`);
-      break;
-    }
-  }
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (i + nums[i] === 512) {
+  //     console.log(`index: ${i}, value: ${nums[i]}`);
+  //     break;
+  //   }
+  // }
+  const ausTx = nums.findIndex((element, index) => element + index === 512);
+  console.log(`index: ${ausTx}, value: ${nums[ausTx]}`);
 };
 atxIdx(strNums);
-
 const weather = [
   {
     id: 5743823523151872,
