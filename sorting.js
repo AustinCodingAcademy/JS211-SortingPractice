@@ -7,21 +7,36 @@
    */        
 const stringsToNumbers = (numbers) => {
     const arrOfNum = strNums.map(num => parseInt(num));
-    console.log(stringToNumbers);
+    console.log(stringsToNumbers);
 }
             
         
   
 
   //2. With the same numbers, find the sum of the even values
-  const sumEvens;
+//use reduce()!!!!!
+// create a variable to store the sum----
+    // should return as one value (sum)----
+// need to iterate throught the array and identify the index of each even number----
+  //- need to define even number use find()!!!
+  //-loop should stop after first iteration through the array----
+  //- if number is even add to total
+  //- if number is odd move on
+// as it gathers the even numbers it needs to add them together.
 
-  console.log(sumEvens);
+const evens = arrOfNum.find()
+const sumOfEvens = 
+  
+
+
+
+
+  // console.log(sumEvens);
 
   // 3.Find the index of the first value when added to it's index = 512 (#ATX!!)
-  const atxIdx;
+  // const atxIdx;
 
-  console.log(`index: ${atxIdx}, value: ${nums[atxIdx]}`);
+  // console.log(`index: ${atxIdx}, value: ${nums[atxIdx]}`);
 
   const weather = [
     { id: 5743823523151872,
@@ -88,7 +103,7 @@ const stringsToNumbers = (numbers) => {
       visibility: 11.14056410562316,
       predictability: 71
     },
-  ],
+  ]
 
   //4. using a higher order function, create an array of the unique 'weather_state_name' values of the weather array. Your function should return the following array ['Light Cloud', 'Heavy Cloud', 'Showers']
   const weatherStates = 
@@ -129,6 +144,7 @@ const stringsToNumbers = (numbers) => {
 
 /**Isntructions:-------------------------
  * 1.   - [ ] Given 1000 digits of PI as strings, return an array of the digits as numbers
+ * 
  * 3.   - [ ] Find the index of the first value when added to it's index = 512 (#ATX!!)
  * 2.   - [ ] With the same numbers, find the sum of the even value
  * 4.   - [ ] using a higher order function, create an array of the unique 'weather_state_name' values of the weather array. Your function should return the following array ['Light Cloud', 'Heavy Cloud', 'Showers']
